@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - TECHCYCLE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <div class="logo">TECHCYCLE</div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#help">Help</a></li>
+                <li><a href="index.html#login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" class="dark-mode-button">🌙</button>
+    </header>
+
+    <main class="product-detail-page">
+        <section class="product-detail-content">
+            <div class="product-image-container">
+                <img id="detail-product-image" src="" alt="Product Image">
+            </div>
+            <div class="product-info-container">
+                <h1 id="detail-product-name">Product Name</h1>
+                <p class="detail-product-price">Price: ₹<span id="detail-product-price">0.00</span></p>
+
+                <div class="detail-section">
+                    <h3>Description</h3>
+                    <p id="detail-product-description">Loading description...</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Technical Specifications</h3>
+                    <ul id="detail-product-specs">
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Setup & Usage</h3>
+                    <p id="detail-product-setup">Loading setup instructions...</p>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Product Reviews</h3>
+                    <div id="detail-product-reviews">
+                    </div>
+                </div>
+
+                <div class="product-detail-actions">
+                    <button class="button add-to-cart-detail" data-id="">Add to Cart</button>
+                    <a href="index.html#products" class="button back-to-products">Back to Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECHCYCLE - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product-detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHCYCLE - Electronic Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo-link">
+            <div class="logo">TECHCYCLE</div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle" class="dark-mode-button">🌙</button>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Your One-Stop Shop for Electronic Components</h1>
+                <p>Quality parts for your next project. Explore our catalog!</p>
+                <a href="#products" class="button">Shop Now</a>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Our Products</h2>
+            <div class="categories">
+                <a href="#" class="category-link active-category" data-category="All Components">All Components</a>
+                <a href="#" class="category-link" data-category="Passive Components">Passive Components</a>
+                <a href="#" class="category-link" data-category="Active Components">Active Components</a>
+                <a href="#" class="category-link" data-category="Sensors & Modules">Sensors & Modules</a>
+                <a href="#" class="category-link" data-category="Robotics Parts">Robotics Parts</a>
+                <a href="#" class="category-link" data-category="Power & Tools">Power & Tools</a>
+            </div>
+            <div class="product-list">
+                <p>Loading products...</p>
+            </div>
+        </section>
+
+        <section id="cart" class="cart-section">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <p id="empty-cart">Your cart is empty.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: ₹<span id="cart-total-price">0.00</span></strong>
+            </div>
+            <button class="button checkout-button">Checkout</button>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About TECHCYCLE</h2>
+            <p>TECHCYCLE is dedicated to providing high-quality electronic components for hobbyists, students, and professionals. We believe in fostering innovation and making technology accessible to everyone.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us at support@techcycle.com or call us at +91 12345 67890.</p>
+        </section>
+
+        <section id="help" class="help-section">
+            <h2>Help & Support</h2>
+            <p>Find answers to common questions in our <a href="#">FAQ section</a> or connect with our support team.</p>
+        </section>
+
+        <section id="login" class="login-section">
+            <h2>Login / Register</h2>
+            <p>Access your account or create a new one to track orders and manage your profile.</p>
+            <div class="login-buttons">
+                <button class="button">Login</button>
+                <button class="button secondary">Register</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TECHCYCLE - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
